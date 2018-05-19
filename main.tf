@@ -20,7 +20,7 @@ resource "google_dns_record_set" "root_domain_txt" {
   ttl  = 3600
 
   rrdatas = [
-    "v=spf1 include:spf.messagingengine.com ?all",
+    "\"v=spf1\" \"include:spf.messagingengine.com\" \"?all\"",
   ]
 }
 
